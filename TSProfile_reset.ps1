@@ -12,3 +12,4 @@ Foreach ($user in $TsProfile) {
     $ADUser = [ADSI]"LDAP://$($user.DistinguishedName)"
     $ADUser.psbase.InvokeSet("terminalservicesprofilepath","")
     $ADuser.setinfo()
+}
